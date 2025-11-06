@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="confetti.css">
+  <style>
+    #header {
+      background-color: #ec87e4;
+      border-radius: 10px;
+      padding: 5px;
+    }
+
+    .nav {
+      padding-right: 20px;
+    }
+
+    .nav ul li{
+      display:inline;
+      padding:0 10px
+    }
+
+    h1 {
+      text-align: center;
+      color: black;
+      margin: 8px;
+    }
+    #seccion {
+      display: flex;
+      flex-direction: row;
+      flex-wrap:wrap
+    }
+
+    .barra {
+      padding: 10px;
+      margin:5px;
+      background: rgb(157, 192, 231);
+      flex:3;
+      border-radius:10px;
+      display:flex;
+      flex-flow:column;
+      align-items:center;
+    }
+
+    .contenido {
+      padding: 10px;
+      border-radius:10px;
+      background: rgb(39, 128, 108);
+      margin:5px;
+      flex:1 150px;
+    }
+
+    .subcontenido2 {
+      display:flex;
+      flex-direction:row;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+
+    #resultado {
+      display:flex;
+      flex-direction:column;
+      flex-wrap:wrap;
+      align-items: center;
+    }
+
+    #resultado2 {
+      display:flex;
+      flex-direction:column;
+      flex-wrap:wrap;
+      align-items: center;
+    }
+    
+    #footer {
+      background-color: rgba(136, 87, 121, 0.568);
+      height: 100%;
+      text-align: center;
+      padding-top: 10px;
+      border-radius: 10px;
+      display:flex;
+      flex-flow:row;
+    }
+    .pie {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    #galeria{
+      display:flex;
+      flex-direction:row;
+      flex-wrap:wrap; 
+      height:100px;
+    }
+
+    .proyecto{
+      
+      height:150px;
+      max-width:150px;
+      background-color:rgb(255, 255, 255);
+      border-radius:10px;
+      margin:10px;
+      flex:1 100px;
+    }
+
+    .barra a {
+      display:block;
+    }
+    #imagen-interactiva {
+      position: relative;
+      width: 900px;
+      height: 600px;
+      background-image: url('81qohiv33aL._AC_UF894,1000_QL80_.jpg');
+      background-size: cover;
+      border: 2px solid #000;
+      border-radius: 10px;
+    }
+
+    #hotspot1 {
+      position: absolute;
+      top: 500px;
+      left: 240px;
+      width: 40px;
+      height: 40px;
+      background-color: #0015ff80;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    #hotspot2 {
+      position: absolute;
+      top: 250px;
+      left: 160px;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(0, 21, 255, 0.5);
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    #hotspot3 {
+      position: absolute;
+      top: 450px;
+      left: 60px;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(0, 21, 255, 0.5);
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    #hotspot4 {
+      position: absolute;
+      top: 480px;
+      left: 730px;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(0, 21, 255, 0.5);
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    #hotspot5 {
+      position: absolute;
+      top: 460px;
+      left: 390px;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(0, 21, 255, 0.5);
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    #hotspot6 {
+      position: absolute;
+      top: 0px;
+      left: 430px;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(0, 21, 255, 0.5);
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+
+    .text-hotspot {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-weight: bold;
+    }
+
+    #instrucciones {
+      flex:1;
+      cursor: pointer;
+    }
+
+    #prueba {
+      flex:1;
+      cursor:pointer;
+    }
+
+    .texto-rojo{
+            font-size:40px;
+            font-weight: bold;
+            color:red;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <div class="nav" style="text-align:center;">
+      <h3>Bienvenido a "Conociendo La tecnologia Moderna"</h3>
+    </div>
+  </div>
+  <div id="seccion">
+    <div class="barra">
+        <div id="imagen-interactiva">
+          <div id="hotspot1"><span class="text-hotspot">1</span></div>
+          <div id="hotspot2"><span class="text-hotspot">2</span></div>
+          <div id="hotspot3"><span class="text-hotspot">3</span></div>
+          <div id="hotspot4"><span class="text-hotspot">4</span></div>
+          <div id="hotspot5"><span class="text-hotspot">5</span></div>
+          <div id="hotspot6"><span class="text-hotspot">6</span></div>
+
+        </div>
+    </div>
+    <div class="contenido">
+      <div class="subcontenido1">
+        <h2 id="titulo-info">Instrucciones</h2>
+        <p id="texto-info">Haz click en cada uno de los puntos de la imagen para ver su descripción. Una vez visualizado el interactivo, realiza el test de conocimientos. Una vez terminado de ver la informacion ve hacia abajo para contestar el test de conocimiento.</p>
+      </div>
+      <div class="subcontenido2">
+        <div class="proyecto">
+          <img id="imagen-info" src="hotspot-cursor.png" alt="Imagen info" style="width:100%; height:100%; border-radius:10px;">
+        </div>
+      </div>
+      <div id="resultado" class="invisible">
+        <h2>Tu resultado:</h2>
+        <span id="calif" class="texto-rojo">0/0</span>
+        <img id="imagen-resultado" width="200px" src="Congratulations Congrats GIF.gif" />
+      </div>      
+      <div id="resultado2" class="invisible">
+        <h2>Tu resultado:</h2>
+        <span id="calif" class="texto-rojo">0/0</span>
+        <h2>Esfuerzate mas</h2>
+        <img id="imagen-resultado" width="200px" src="Ttrpg Do Better GIF by zoefannet.gif" />
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div id="instrucciones"><img width="100px" src="instrucciones.png" /></div>
+    <div id="prueba"><img width="100px" src="test.png" /></div>
+  </div>
+  <script type="text/javascript">
+    let puntaje = 0;
+    let pregunta1 = "";
+
+    document.getElementById('hotspot1').onclick = function() {
+      document.getElementById('titulo-info').textContent = 'Teclado';
+      document.getElementById('texto-info').textContent = 'Hardware de, laptops o pc que es fundamental para el funcionamiento de la misma, en este mismo se presentan todas las teclas disponibles para escribir, asi como funciones especiales que son escenciales pra el funcionamiento de la computadora.';
+      document.getElementById('imagen-info').setAttribute('src', 'teclado-para-notebook-hp-dell-lenovo-asus-macbook-acer-toshiba-dynabook-468x300.jpg');    
+    };
+
+    document.getElementById('hotspot2').onclick = function() {
+      document.getElementById('titulo-info').textContent = 'Software';
+      document.getElementById('texto-info').textContent = 'El funcionamiento interno de la computadora centrado principalmente en programas y aplicaiones de la computadora que puedes usar o usas diariamente meintras esta en funcionamiento.';
+      document.getElementById('imagen-info').setAttribute('src', 'estomago.png');
+    };
+
+    document.getElementById('hotspot3').onclick = function() {
+      document.getElementById('titulo-info').textContent = 'Puertos';
+      document.getElementById('texto-info').textContent = 'Entradas en lo mas externo de la compu que sirven para permitir la conexion entre este dispositivo y otro, permitiendo el paso de datos.';
+      document.getElementById('imagen-info').setAttribute('src', 'estomago.png');
+    };
+
+    document.getElementById('hotspot4').onclick = function() {
+      document.getElementById('titulo-info').textContent = 'CPU';
+      document.getElementById('texto-info').textContent = 'El procesador de la computadora esta hecho para ayudar, en la velocidad a la que se pueden mostrar los datos, o tambien es recibida la informacion y procesada para su uso.';
+      document.getElementById('imagen-info').setAttribute('src', 'estomago.png');
+    };
+
+    document.getElementById('hotspot5').onclick = function() {
+      document.getElementById('titulo-info').textContent = 'Memoria';
+      document.getElementById('texto-info').textContent = 'Se divide en dos partes, la memoria SSD, que es la encargada de dar el espacio suficiente para que todos los programas, apps y demas funciones de la computadora tengan espacio suficiente, y la Ram, que es la encargada de la velocidad de procesamiento de los datos de todas las aplicaciones.';
+      document.getElementById('imagen-info').setAttribute('src', 'estomago.png');
+    };
+
+    document.getElementById('hotspot6').onclick = function() {
+      document.getElementById('titulo-info').textContent = 'Camara';
+      document.getElementById('texto-info').textContent = 'Parte externa de la compu que permite el procesamiento de imagenes haciendoque puedas contactar a alguien a partir de ella y msotarse unos a otros o grabar.';
+      document.getElementById('imagen-info').setAttribute('src', 'estomago.png');
+    };
+
+    document.getElementById('instrucciones').onclick = function(){
+      document.getElementById('titulo-info').textContent = 'Instrucciones';
+      document.getElementById('texto-info').textContent = 'Haz click en cada uno de los puntos de la imagen para ver su descripción. Una vez visualizado el interactivo, realiza el test de conocimientos.';
+      document.getElementById('imagen-info').setAttribute('src', 'hotspot-cursor.png');
+    };
+
+    document.getElementById('prueba').onclick = function(){
+      alert("Bienvenidos a la prueba de conocimientos");
+      alert("Responde correctamente todas las preguntas para ganar");
+      alert("Nota importarte algunas palabras tienen signos especiales");
+      alert("Todo se escribira en minusculas y sin acento");
+      alert("Algunas respuestas son largas()");
+      alert("Comenzamos el cuestionario");
+
+      if(pregunta1 = prompt("¿Cual es la parte externa con mas funciones de una laptop?")){
+            // Se eliminan espacios 
+            pregunta1 = pregunta1.trim();
+            
+        }
+        if (pregunta1.toLowerCase() === "teclado") {
+            alert("¡Correcto! El teclado es la parte con mas funciones de la compu.");
+            puntaje += 1;
+        } else {
+            alert("Incorrecto. La respuesta correcta es: teclado.");
+        }
+
+        if(pregunta2 = prompt("¿Cual es la app de escritura que se muestra dos veces?")){
+            // Se eliminan espacios 
+            pregunta2 = pregunta2.trim();
+            
+        }
+        if (pregunta2.toLowerCase() === "word") {
+            alert("¡Correcto! word se ve 2 veces.");
+            puntaje += 1;
+        } else {
+            alert("Incorrecto. La respuesta correcta es: word.");
+        }
+
+        if(pregunta3 = prompt("¿Que se usa para ver las cantidades?")){
+            // Se eliminan espacios 
+            pregunta3 = pregunta3.trim();
+            
+        }
+        if (pregunta3.toLowerCase() === "calculadora") {
+            alert("¡Correcto! se calcula pero es lo mismo.");
+            puntaje += 1;
+        } else {
+            alert("Incorrecto. La respuesta correcta es: calculadora.");
+        }
+
+        if(pregunta4 = prompt("¿Como se llama al funcionamiento interno general?")){
+            // Se eliminan espacios 
+            pregunta4 = pregunta4.trim();
+            
+        }
+        if (pregunta4.toLowerCase() === "software") {
+            alert("¡Correcto! El software es el funcionamiento interno de la manera mas general.");
+            puntaje += 1;
+        } else {
+            alert("Incorrecto. La respuesta correcta es: software.");
+        }
+
+        if(pregunta5 = prompt("¿En que se centra el software?")){
+            // Se eliminan espacios 
+            pregunta5 = pregunta5.trim();
+            
+        }
+        if (pregunta5.toLowerCase() === "programas") {
+            alert("¡Correcto! lo principal de un software son los pregramas que lo acompañan.");
+            puntaje += 1;
+        } else {
+            alert("Incorrecto. La respuesta correcta es: programas.");
+        }
+
+        if(pregunta6 = prompt("¿Para que sirven los puertos?")){
+            // Se eliminan espacios 
+            pregunta6 = pregunta6.trim();
+            
+        }
+        if (pregunta6.toLowerCase() === "para permitir la conexion entre este dispositivo y otro") {
+            alert("¡Correcto! Paea eso sirven.");
+            puntaje += 1;
+        } else {
+            alert("Incorrecto. La respuesta correcta es: para permitir la conexion entre este dispositivo y otro.");
+        }
+
+        if(pregunta7 = prompt("¿Cuales son los 2 tipos de memoria?")){
+            // Se eliminan espacios 
+            pregunta7 = pregunta7.trim();
+            
+        }
+        if (pregunta7.toLowerCase() === "ssd y ram") {
+            alert("¡Correcto! son los 2 tipos de memoria.");
+            puntaje += 1;
+        } else {
+            alert("Incorrecto. La respuesta correcta es: ssd y ram.");
+        }
+
+        if(pregunta8 = prompt("¿para que sirve la ssd?")){
+            // Se eliminan espacios 
+            pregunta8 = pregunta8.trim();
+            
+        }
+        if (pregunta8.toLowerCase() === "aumentar el almacenamiento de la compu") {
+            alert("¡Correcto! sin espacio no habria suficiente para todo.");
+            puntaje += 1;
+        } else {
+            alert("Incorrecto. La respuesta correcta es: aumentar el almacenamiento de la compu.");
+        }
+
+        if(pregunta9 = prompt("¿Para que sirve la ram?")){
+            // Se eliminan espacios 
+            pregunta9 = pregunta9.trim();
+            
+        }
+        if (pregunta9.toLowerCase() === "aumentar la velocidad de procesamiento") {
+            alert("¡Correcto! Esto ayuda a que la compu sea mas rapida.");
+            puntaje += 1;
+        } else {
+            alert("Incorrecto. La respuesta correcta es: aumentar la velocidad de procesamiento.");
+        }
+
+        if(pregunta10 = prompt("¿donde se encuentra la camara?")){
+            // Se eliminan espacios 
+            pregunta10 = pregunta10.trim();
+            
+        }
+        if (pregunta10.toLowerCase() === "hasta arriba en medio") {
+            alert("¡Correcto! La imagen no miente.");
+            puntaje += 1;
+        } else {
+            alert("Incorrecto. La respuesta correcta es: hasta arriba en medio.");
+        }
+
+        if(puntaje >= 9) {
+            alert("¡Felicidades! Has respondido correctamente todas las preguntas.");
+            //document.getElementById("fiesta").setAttribute("class", "visible");
+            document.getElementById("calif").textContent = puntaje + "/10";
+            document.getElementById("resultado").setAttribute("class", "visible");
+            document.getElementById("resultado2").setAttribute("class", "invisible");
+            
+        } else {
+            alert("Has respondido " + puntaje + " preguntas correctamente. ¡Sigue intentando!");
+            document.getElementById("resultado").setAttribute("class", "invisible");
+            document.getElementById("resultado2").setAttribute("class", "visible");
+        } 
+    };
+  </script>
+</body>
+</html>
