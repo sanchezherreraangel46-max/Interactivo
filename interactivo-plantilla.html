@@ -435,6 +435,18 @@
             puntaje += 1;
         } else {
             alert("Incorrecto. La respuesta correcta es: permitir la interacción y el intercambio de datos entre el procesador, la memoria RAM, la tarjeta gráfica, los discos duros y otros dispositivos");
+        
+          } 
+          if(pregunta12 = prompt("¿Cómo copias algo en Windows?")){
+            // Se eliminan espacios 
+            pregunta12 = pregunta12.trim();
+            
+        }
+        if (pregunta12.toLowerCase() === "ctrl + c") {
+            alert("¡Correcto! ");
+            puntaje += 1;
+        } else {
+            alert("Incorrecto. La respuesta correcta es: ctrl + c");
         }
         if(puntaje >= 9) {
             alert("¡Felicidades! Has respondido correctamente todas las preguntas.");
