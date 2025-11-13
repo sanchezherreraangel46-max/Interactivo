@@ -425,7 +425,17 @@
         } else {
             alert("Incorrecto. La respuesta correcta es: hasta arriba en medio.");
         }
-
+        if(pregunta11 = prompt("¿Para que sirve la tarjeta grafica?")){
+            // Se eliminan espacios 
+            pregunta11 = pregunta11.trim();
+            
+        }
+        if (pregunta11.toLowerCase() === "permitir la interacción y el intercambio de datos entre el procesador, la memoria RAM, la tarjeta gráfica, los discos duros y otros dispositivos") {
+            alert("¡Correcto! Esto ayuda a que la compu sea mas rapida.");
+            puntaje += 1;
+        } else {
+            alert("Incorrecto. La respuesta correcta es: permitir la interacción y el intercambio de datos entre el procesador, la memoria RAM, la tarjeta gráfica, los discos duros y otros dispositivos");
+        }
         if(puntaje >= 9) {
             alert("¡Felicidades! Has respondido correctamente todas las preguntas.");
             //document.getElementById("fiesta").setAttribute("class", "visible");
